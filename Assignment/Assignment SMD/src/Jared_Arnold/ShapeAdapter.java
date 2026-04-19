@@ -18,7 +18,13 @@ public class ShapeAdapter extends Visibility implements ShapeBasic{
 
     @Override
     public String printText(){
-        
+        if (shape instanceof Triangle) {
+        return "Triangle";
+    } else if (shape instanceof ShapeDiamond) {
+        return "ShapeDiamond";
+    } else {
+        return "This shape is not supported";
+    }
     }
     
 }
